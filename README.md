@@ -1,18 +1,29 @@
 # Task-1 : Data Cleaning and Preprocessing
 Clean and prepare a Raw Dataset
+<br>
 DATASET NAME : MOBILE SALES DATA
+<br>
 First : Merged the Day, Month and Year column with Date Format
+<br>
 Second : Change Price per unit column format from numbers to currency
+<br>
 Third : Rename values of days from short to large like Rename value sun to sunday, mon to monday etc.
+<br>
 Fourth : Remove unwanted columns like customer age
+<br>
 Fifth : Reordered columns according to dataset
+<br>
 Sixth : Deleted Duplicates 
+<br>
 Above changes are done in Excel Power Query
+<br>
 Load and transform the data now
+<br>
 Now in excel, add column after the unit sold column ,i.e., Total Price = Price per unit * Unit Sold
 
-
+<br>
 This is the Power Query Editor Description : 
+<br>
 let
     Source = Excel.Workbook(File.Contents("C:\Users\hp\OneDrive\Desktop\Programming\Data Analysis\Task - 1\Mobile Sales Data (Before).xlsx"), null, true),
     Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
